@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chi e dove</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>body {padding: 1em;}</style>
+</head>
+<body>
+<h1>Chi e dove</h1>
+<input type=text id=surname onchange='search(this)'/>
+<pre id=ced></pre>
+<script>
+let parser = new DOMParser();
+let ced = document.getElementById('ced');
+function search(elem) {
+    let surname = elem.value;
+    let url = `http://www.unimi.it/chiedove/listaPersoneXML.jsp?surname=${surname}&name=&tipoOrganico=0`;
+    fetch(url).then(response => response.text()).then(html => {
+        let dom = parser.parseFromString(html, 'text/html');
+        ced.innerText = '';
+        for (let tr of Array.from(dom.querySelectorAll('tr')).slice(1, -1)) {
+            for (let te of tr.querySelectorAll('th, td')) 
+                ced.innerText += '\n' + te.textContent;
+            ced.innerText += '\n'
+        }
+    });
+}
+</script>    
+</body>
+</html>
