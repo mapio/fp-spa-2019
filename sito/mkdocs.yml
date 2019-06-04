@@ -1,0 +1,34 @@
+site_name: SPA con ECMAScript 9, Vue.js e GraphQL
+
+site_author: Massimo Santini
+
+copyright: "&copy; Massimo Santini, 2019"
+
+theme: 
+  name: material
+  palette:
+    primary: 'blue grey'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu mono'
+  language: 'it'  
+  use_directory_urls: true
+
+extra:
+  search:
+    language: 'it'
+
+google_analytics: ['UA-377250-26', 'auto']
+
+markdown_extensions: #  https://python-markdown.github.io/extensions/
+  - toc:
+        permalink: "#"
+        toc_depth: 2-6
+  - admonition        
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+extra_css: 
+  - css/extra.css
