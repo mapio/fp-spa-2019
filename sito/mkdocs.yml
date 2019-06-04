@@ -50,3 +50,13 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js
   - js/extra.js
+
+nav:
+  - index.md
+  - articolazione.md
+  - prerequisiti.md
+  - software.md
+  - Moduli:
+    - moduli/ecmascript.md
+    - moduli/vue.md
+    - moduli/backend.md

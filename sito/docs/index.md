@@ -2,8 +2,6 @@
 
 ---
 
-## Obiettivi
-
 Il corso si propone di presentare le più moderne tecnologie web per lo
 sviluppo di [Single-page
 Application](https://en.wikipedia.org/wiki/Single-page_application "Single-page Application")
@@ -23,40 +21,18 @@ maggior semplicità di apprendimento e utilizzo. Riguardo al *lato
 server*, il corso si limita ad un semplice esempio dell'uso di
 [GraphQL](https://graphql.org/).
 
-## Articolazione del corso
+Nel menù a sinistra di ogni pagina trovate i link alle altre informazioni, in
+particolare: l'[articolazione](articolazione) del corso, i
+[prerequisiti](prerequisiti) per i partecipanti e le indicazioni circa il
+[software](software) che verrà usato, nonché le informazioni sui
+**moduli** di cui è composto il corso.
 
-Il corso si articola in moduli, secondo il calendario seguente.
+!!! warning "Registrazione su Unicloudidattica"
 
-Data | Modulo
---- | ---
-11 giugno, 8:45 - 10:45 | Introduzione a ECMASscript 9
-11 giugno, 11:00 - 13:00 | Chiusure, promesse e callback 
-11 giugno, 13:45 - 15:45 | Classi e moduli 
-11 giugno, 16:00 - 17:00 | Esercitazione "chiedove"
-12 giugno, 9:00 - 10:45 | Vue
-12 giugno, 11:00 - 13:00 | Router e store
-12 giugno, 13:45 - 14:45 | Framework CSS
-12 giugno, 15:00 - 17:00 | Esercitazione "chiedove con stile"
-14 giugno, 9:00 - 10:45 | Backend (REST)
-14 giugno, 11:00 - 13:00 | GraphQL
-14 giugno, 13:45 - 14:45 | Integrazione GraphQL e Vue
-14 giugno, 13:45 - 17:00 | Prova finale
-
-## Prerequisiti
-
-Il corso si rivolge ai **programmatori** che hanno già una *esperienza
-introduttiva* maturata nello sviluppo di applicazioni web, in
-particolare degli argomenti di base di tale contesto quali, ad esempio:
-
--   nozioni base su applicazioni *client*/*server* (protocollo
-    [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)),
--   linguaggi di marcatura e fogli di stile:
-    [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) e
-    [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS),
--   linguaggi di programmazione lato client:
-    [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
-
-Un modo ragionevole di appurare le proprie competenze è verificare di
-avere *grande familiarità* con gli aspetti trattati dai *tutorial* e
-dalle *guide introduttive* elencate nelle pagine cui si riferiscono i
-punti della lista precedente.
+    I corsisti che intendono usare la strumentazione provvista 
+    nell'[aula del corso](http://www.unimi.it/studenti/unicloud/97553.htm#par129318)
+    devono **provvedere tempestivamente** alla [registrazione](https://registrazione.unicloudidattica.unimi.it/)
+    per poter utilizzare il proproi account GNU/Linux. 
+    
+    In alternativa, potranno utilizzare risorse proprie (come un portatile), a patto
+    che abbiamo installato il [software](software) richiesto.
