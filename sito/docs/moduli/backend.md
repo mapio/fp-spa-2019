@@ -2,6 +2,8 @@
 
 ---
 
+Questo modulo si svolge il 14 giugno, l'orario di massima è il seguente:
+
 Orario | Modulo
 --- | ---
 9:00 - 10:45  | Caso REST-like

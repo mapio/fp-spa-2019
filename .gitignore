@@ -1,3 +1,4 @@
 .envrc
 sito/site
 node_modules/
+dist/
