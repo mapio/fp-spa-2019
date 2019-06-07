@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>giromilano</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>body {padding: 1em;}</style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>giromilano</h1>
+<div>Via: <input type=text id=name onkeypress='search_stop(this)'/></div>
+<div>Codice: <input type=text id=code onkeypress='search_info(this)' /></div>
+
+<pre id=out></pre>
+<script>
+let out = document.getElementById('out');
+
+function search_stop(el) {
+    if (event.key !== 'Enter') return;
+    out.innerText = 'Searching...';
+    let name = el.value;
+    fetch('https://giromilano.atm.it/proxy.ashx', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `url=tpPortal/tpl/stops/search/${name}`
+    }).then(resp => resp.json()).then(json => {
+        out.innerText = '';
+        for (let stop of json) 
+            out.innerText += stop.Code + '\t' + stop.Description + '\n';
+    });
+}
+
+function search_info(el) {
+    if (event.key !== 'Enter') return;
+    out.innerText = 'Searching...';
+    let code = el.value;
+    fetch('https://giromilano.atm.it/proxy.ashx', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `url=tpPortal/geodata/pois/${code}`
+    }).then(resp => resp.json()).then(json => {
+        out.innerText = '';
+        out.innerText = json.Code + ' ' + Xjson.Description + '\nLinee:\n';
+        for (line of json.Lines) {
+            out.innerHTML += '\t' + line.Line.LineCode + '\t' + line.Direction + '\t' + line.Line.LineDescription + '\t' + line.WaitMessage + '\n';
+            console.log(line);
+        }
+    });
+}
+
+    
+</script>    
+</body>
+</html>
