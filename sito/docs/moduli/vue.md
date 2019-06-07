@@ -13,7 +13,7 @@ Orario | Modulo
 
 ## Software
 
-Per svolgere al meglio gli esercizi può essre utile installare:
+Per svolgere al meglio gli esercizi può essere utile installare:
 
 * L'estensione [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) per VS Code,
 * l'estensione [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/) per Firefox.

@@ -1,4 +1,4 @@
-# Integrazione con il backend
+# Backend
 
 ---
 
@@ -10,3 +10,12 @@ Orario | Modulo
 11:00 - 13:00 | GraphQL
 13:45 - 14:45 | Integrazione con Vue
 13:45 - 17:00 | **Prova finale**
+
+## Riferimenti
+
+[//]: https://github.com/APIs-guru/graphql-apis
+
+* [GraphQL tutorial](https://graphql.org/learn/)
+* [Apollo server example](https://github.com/apollographql/graphql-server-example)
+
+* [graphql-yoga](https://github.com/prisma/graphql-yoga)
