@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-export const DATA = {
+export const FOOD = {
   fruits: [
     { name: 'Banana', price: 10 },
     { name: 'Apple', price: 20 },
@@ -13,8 +13,6 @@ export const DATA = {
     { name: 'Potato', price: 20 },
   ],
 };
-
-window.DATA =DATA;
 
 new Vue({
   render: h => h(App),
