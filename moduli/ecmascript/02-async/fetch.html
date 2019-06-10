@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><title>giromilano</title>
+<style>body {padding: 2cm;}</style>
+<link rel="stylesheet" href="spinner.css"/>
+</head>
+<body>
+<img id=img />
+<div id="spinner" class="show">    
+</div>
+<pre id=output></pre>
+<script>
+const spinner = document.getElementById('spinner');
+const output = document.getElementById('output');
+const img = document.getElementById('img');
+console.log(img);
+fetch('https://randomuser.me/api/').then(response => response.json()).then(json => {
+    output.innerText = JSON.stringify(json, null, '\t');
+    fetch(json.results[0].picture.medium).then(response => response.blob()).then(blob => {
+        img.src = URL.createObjectURL(blob);  
+        spinner.style.visibility = 'hidden';
+    });
+});
+</script>
+</body></html>

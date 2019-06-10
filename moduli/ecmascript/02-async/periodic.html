@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><title>giromilano</title>
+<style>body {padding: 2cm;}</style></head>
+<body>
+<span id=fast style='padding: 1cm;'>&nbsp;</span>
+<span id=slow style='padding: 1cm;'>&nbsp;</span>
+<script>
+let fast = document.getElementById('fast');
+let slow = document.getElementById('slow');
+let colors = ['red', 'green'];
+let current_color = 0;
+
+setInterval(() => {
+    fast.style.backgroundColor = colors[current_color];
+    current_color = 1 - current_color;
+}, 100);
+
+setInterval(() => slow.style.backgroundColor = colors[current_color], 300);;
+
+setTimeout(() => {
+    alert('done');
+}, 1000);
+
+</script>
+</body></html>

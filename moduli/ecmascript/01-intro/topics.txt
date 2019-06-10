@@ -1,0 +1,55 @@
+# Code structure
+## Statements
+## Semicolons [#semicolon]
+
+# The modern mode, "use strict"
+## "use strict"
+
+# Variables
+## A variable
+## A real-life analogy
+## Variable naming [#variable-naming]
+## Constants
+
+# Data types
+## A number
+## A string
+## A boolean (logical type)
+## The "null" value
+## The "undefined" value
+## Objects and Symbols
+## The typeof operator [#type-typeof]
+
+# Operators
+
+# Comparisons
+
+# Interaction
+
+# Conditional operators
+
+# Logical operators
+
+# Loops
+## The "while" loop
+## The "do..while" loop
+## The "for" loop
+### Skipping parts
+## Breaking the loop
+## Continue to the next iteration [#continue]
+## Labels for break
+
+# The "switch" statement
+
+# Functions
+## Function Declaration
+## Local variables
+## Outer variables
+## Parameters
+## Default values
+## Returning a value
+
+# Function expressions and arrows
+## Callback functions
+## Function Expression vs Function Declaration
+## Arrow functions [#arrow-functions]

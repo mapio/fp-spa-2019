@@ -10,7 +10,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: true,
             template: './src/index.html',
-            filename: './index.html',
+            filename: './dist/index.html',
             hash: true
         }),
     ],
@@ -18,6 +18,9 @@ module.exports = {
         contentBase: './dist',
         compress: true,
         port: 9000
+    }, 
+    stats: {
+        children: false
     },
     module: {
         rules: [
