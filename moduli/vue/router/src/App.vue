@@ -16,7 +16,4 @@
 #app {
   margin: 60px;
 }
-#list {
-  border: 1pt dotted black;
-}
 </style>

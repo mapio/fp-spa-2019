@@ -1,13 +1,13 @@
 <template>
   <div class="list">
     <h2>This is the list page for {{ $route.params.id }}</h2>
-    <ItemList name="Fruit" :items='items'/>
+    <ItemList :items='items'/>
   </div>
 </template>
 
 <script>
 import ItemList from '@/components/ItemList.vue'
-import {DATA} from '@/main.js'
+import {FOOD} from '@/main.js'
 
 export default {
   name: 'list',
@@ -15,7 +15,7 @@ export default {
     ItemList,
   },
   computed: {
-    items() {return DATA[this.$route.params.id]; }
+    items() {return FOOD[this.$route.params.id]; }
   }
 }
 

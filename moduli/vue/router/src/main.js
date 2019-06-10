@@ -4,7 +4,7 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-export const DATA = {
+export const FOOD = {
   fruits: [
     { name: 'Banana', price: 10 },
     { name: 'Apple', price: 20 },
@@ -14,7 +14,7 @@ export const DATA = {
     { name: 'Potato', price: 20 },
   ],
 };
-  
+
 new Vue({
   router,
   render: h => h(App)
