@@ -1,0 +1,27 @@
+<template>
+  <div class="hello">
+    <ul>
+      <Item v-for='item of sorted_items' :key='item.name' :name='item.name' :price='item.price'/>
+    </ul>
+  </div>
+</template>
+
+<script>
+import Item from './Item.vue'
+
+export default {
+  name: 'ItemList',
+  props: {
+    name: String,
+    items: Array
+  },
+  components: {
+    Item
+  },
+  computed: {
+    sorted_items() {
+      return this.items.sort((a, b) => a.name.localeCompare(b.name))
+    },
+  }
+}
+</script>
