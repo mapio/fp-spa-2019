@@ -64,3 +64,25 @@ function echo({key}) {
 }
 
 echo(dict);
+
+// spread
+
+let one = [1, 2];
+let two = [...one, 3];
+console.log(two);
+
+
+let one = {a: 1, b: 2};
+let two = {...one, c: 3};
+console.log(two);
+
+// rest
+
+let one = [1, 2, 3];
+let [first, ...rest] = one;
+console.log(rest);
+
+
+let one = { a: 1, b: 2, c: 3 };
+let {a, ...rest } = one;
+console.log(rest);
