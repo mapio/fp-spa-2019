@@ -24,7 +24,7 @@
     }
 
     const out = document.getElementById('out');
-    const url = 'https://raw.githubusercontent.com/mapio/fp-spa-2019/master/moduli/ecmascript/04-giromilano/tweets.json';
+    const url = './tweets.json';
     const table = document.createElement('table');
     fetch(url).then(r => r.json()).then(json => {
         const count = {};
