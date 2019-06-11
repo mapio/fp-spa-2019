@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table, td, tr, th {border: .5pt solid black; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+<div id=out></div>
+<script>
+    function make_table(mat) {
+        const table = document.createElement('table');
+        for (let row of mat) {
+            let tr = document.createElement('tr');
+            for (let col of row) {
+                let td = document.createElement('td');
+                td.innerHTML = col;
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+        return table;
+    }
+
+    const out = document.getElementById('out');
+    const url = 'https://raw.githubusercontent.com/mapio/fp-spa-2019/master/moduli/ecmascript/04-giromilano/tweets.json';
+    const table = document.createElement('table');
+    fetch(url).then(r => r.json()).then(json => {
+        const count = {};
+        json.tweets.forEach(tweet => {
+            let screen_name = tweet.user.screen_name;
+            if (screen_name in count) count[screen_name]++;
+            else count[screen_name] = 1;
+        });
+        let topk = Object.fromEntries(
+            Object.entries(count).sort(([n0, c0], [n1, c1]) => c1 - c0).slice(0, 5)
+        );
+        out.appendChild(make_table(
+            json.tweets.filter(t => t.user.screen_name in topk).map(t => [
+                topk[t.user.screen_name],
+                t.user.screen_name,
+                t.text
+        ]).sort((a ,b) => a[1].localeCompare(b[1]))));
+    });
+</script>
+</body>
+</html>

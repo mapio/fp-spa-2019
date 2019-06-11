@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table, td, tr, th {border: .5pt solid black; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+<input id=input type="text" oninput="search_tweets(this)"/>
+<div id=out></div>
+<script>
+    let tweets = null;
+    const out = document.getElementById('out');
+    const url = 'https://raw.githubusercontent.com/mapio/fp-spa-2019/master/moduli/ecmascript/04-giromilano/tweets.json';
+    const table = document.createElement('table');
+    const input = document.getElementById('input');
+    input.style.visibility = 'hidden';
+
+    function search_tweets(elem) {
+        if (tweets === null) return;
+        let query = elem.value;
+        let mat = tweets.filter(t => t.text.indexOf(query) != -1).map(t => [t.text]);
+        console.log(mat);
+        if (out.firstChild === null)
+            out.appendChild(make_table(mat));
+        else
+            out.firstChild.replaceWith(make_table(mat));
+    }
+
+    function make_table(mat) {
+        const table = document.createElement('table');
+        for (let row of mat) {
+            let tr = document.createElement('tr');
+            for (let col of row) {
+                let td = document.createElement('td');
+                td.innerHTML = col;
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+        return table;
+    }
+
+    fetch(url).then(r => r.json()).then(json => {
+        tweets = json.tweets;
+        input.style.visibility = 'visible';
+    });
+</script>
+</body>
+</html>
