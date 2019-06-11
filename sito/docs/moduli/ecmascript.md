@@ -7,9 +7,9 @@ Questo modulo si svolge l'11 giugno, l'orario di massima è il seguente:
 Orario | Modulo 
 --- | --- 
  8:45 - 10:45 | [Introduzione al linguaggio](https://github.com/mapio/fp-spa-2019/tree/master/moduli/ecmascript/01-intro)
-11:00 - 13:00 | [Chiusure, callback e promesse](02-async)
-13:45 - 15:45 | [Classi e moduli](03-oop)
-16:00 - 17:00 | [Esercitazione "Tweets"](04-tweets)
+11:00 - 13:00 | [Chiusure, callback e promesse](https://github.com/mapio/fp-spa-2019/tree/master/moduli/ecmascript/02-async)
+13:45 - 15:45 | [Classi e moduli](https://github.com/mapio/fp-spa-2019/tree/master/moduli/ecmascript/03-oop)
+16:00 - 17:00 | [Esercitazione "Tweets"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/ecmascript/04-tweets)
 
 ## Software
 
