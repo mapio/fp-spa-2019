@@ -9,7 +9,7 @@ for (const server of servers) rams0.push(server.ram);
 console.log(rams0);
 
 let rams1 = [];
-servers.forEach(function(server) {
+servers.forEach(server => {
     rams1.push(server.ram);
 });
 console.log(rams1);

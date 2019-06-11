@@ -4,10 +4,11 @@ let x = 1;
 let s = 'strings';
 let sx = `string of ${x}`;
 let state = true | false;
-let numbers = [1, 2, 3, 4];
-let dict = {'key': 5.2, 3: "string", s};
+let numbers = [1, 2, 'a', 4];
+let dict = {'key': 5.2, 3: "string"};
 
-// undefined, null, object and symbols
+console.log(numbers[3], dict['key'], dict.key);
+
 
 const x = 2;
 x = 3;
@@ -31,7 +32,10 @@ console.log(a === b);
 
 // non C-like iteration
 
+let numbers = [1, 2, 'a', 4];
 for (let n of numbers) console.log(n);
+
+let dict = { 'key': 5.2, 3: "string" };
 for (let k in dict) console.log(k, dict[k]);
 
 for (let [k, v] of Object.entries(dict)) console.log(k, v);
@@ -49,7 +53,7 @@ const fib = function(n) {
 for (const n in [0, 1, 2, 3, 4]) console.log(fib(n));
 
 const sq = x => x * x;
-for (const n in [0, 1, 2, 3, 4]) console.log(sq(n));
+for (const in [0, 1, 2, 3, 4]) console.log(sq(n));
 
 // unpacking
 
