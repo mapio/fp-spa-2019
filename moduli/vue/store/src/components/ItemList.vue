@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     sorted_items() {
-      return this.items.sort((a, b) => a.name.localeCompare(b.name))
+      return this.items.slice().sort((a, b) => a.name.localeCompare(b.name))
     },
   }
 }

@@ -21,15 +21,8 @@ export default {
   },
   computed: {
     sorted_items() {
-      return this.items.sort((a, b) => a.name.localeCompare(b.name))
+      return this.items.slice().sort((a, b) => a.name.localeCompare(b.name))
     },
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-</style>
