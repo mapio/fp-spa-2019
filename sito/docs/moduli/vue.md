@@ -6,10 +6,10 @@ Questo modulo si svolge il 12 giugno, l'orario di massima è il seguente:
 
 Orario | Modulo 
 --- | --- 
-9:00 - 10:45  | [Introduzione a Vue](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/01-intro)
-11:00 - 13:00 | [Viste multiple con "Vue Router"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/02-router)
-13:45 - 14:45 | [Gestione dello stato con "Vuex"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/03-store)
-15:00 - 17:00 | [Esercitazione](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/04-uicomp)
+9:00 - 10:45  | [Introduzione a Vue](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/01-intro) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/vue/01-intro)
+11:00 - 13:00 | [Viste multiple con "Vue Router"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/02-router) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/vue/02-router)
+13:45 - 14:45 | [Gestione dello stato con "Vuex"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/03-store) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/vue/03-store)
+15:00 - 17:00 | [Esercitazione](https://github.com/mapio/fp-spa-2019/tree/master/moduli/vue/04-uicomp) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/vue/04-uicomp)
 
 ## Software
 
