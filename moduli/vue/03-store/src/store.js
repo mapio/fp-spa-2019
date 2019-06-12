@@ -16,8 +16,7 @@ export const FOOD = {
 
 export default new Vuex.Store({
   state: {
-    food: FOOD,
-    tweets: [],
+    food: FOOD
   },
   mutations: {
     add(state, {kind, name, price}) {
