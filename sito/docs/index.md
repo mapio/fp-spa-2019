@@ -26,13 +26,3 @@ particolare: l'[articolazione](articolazione) del corso, i
 [prerequisiti](prerequisiti) per i partecipanti e le indicazioni circa il
 [software](software) che verrà usato, nonché le informazioni sui
 **moduli** di cui è composto il corso.
-
-!!! warning "Registrazione su Unicloudidattica"
-
-    I corsisti che intendono usare la strumentazione provvista 
-    nell'[aula del corso](http://www.unimi.it/studenti/unicloud/97553.htm#par129318)
-    devono **provvedere tempestivamente** alla [registrazione](https://registrazione.unicloudidattica.unimi.it/)
-    per poter utilizzare il proproi account GNU/Linux. 
-    
-    In alternativa, potranno utilizzare risorse proprie (come un portatile), a patto
-    che abbiamo installato il [software](software) richiesto.
