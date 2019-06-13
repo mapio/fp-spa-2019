@@ -41,7 +41,7 @@ export default {
         .sort((e, f) => e.timestamp_from - f.timestamp_from);
     }
   },
-  beforeMount() {
+  beforeCreate() {
     this.$store.dispatch("fetch_data");
   },
   methods: {}
