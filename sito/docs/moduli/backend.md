@@ -15,7 +15,9 @@ Orario | Modulo
 Per evitare di implementare la parte di backend useremo due *mock*:
 [json-server](https://github.com/typicode/json-server) per la parte REST e
 [json-graphql-server](https://github.com/marmelab/json-graphql-server) per la
-parte GraphQL.
+parte GraphQL. Usando [JSON Generator](https://next.json-generator.com/) si
+possono produrre dati di test casuali (ma verosimili e secondo uno schema dato) in
+formato JSON.
 
 Chi fosse interessato a sviluppare dei backend realistici in ECMAScript può basarsi su [Apollo server](https://www.apollographql.com/docs/apollo-server/) e [GraphQL Yoga](https://github.com/prisma/https://github.com/prisma/graphql-yoga) (basato sul precedente server, ma d'uso più semplice); sono ovviamente possibili soluzioni basate su linguaggi diversi, come ad esempio [Graphene](https://github.com/graphql-python/graphene) in Python.
 
