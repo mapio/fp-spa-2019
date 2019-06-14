@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "json-server": "^0.15.0"
+  },
+  "scripts": {
+    "serve": "json-server db.json"
   }
 }
