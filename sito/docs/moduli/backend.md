@@ -8,6 +8,7 @@ Orario | Modulo
 --- | ---
 9:00 - 10:45  | [REST](https://github.com/mapio/fp-spa-2019/tree/master/moduli/backend/01-rest) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/backend/01-rest/frontend)
 11:00 - 13:00 | [GraphQL](https://github.com/mapio/fp-spa-2019/tree/master/moduli/backend/02-graphql) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/backend/02-graphql/frontend)
+13:45 - 16:30 | [Esercitazione "Giro Milano"](https://github.com/mapio/fp-spa-2019/tree/master/moduli/backend/03-giromilano) [![github](../img/github.png)](https://codesandbox.io/s/github/mapio/fp-spa-2019/tree/master/moduli/backend/03-giromilano)
 13:45 - 17:00 | **Prova finale** (e *questionario di valutazione*)
 
 ## Software
