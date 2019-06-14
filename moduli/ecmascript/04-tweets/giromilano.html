@@ -48,7 +48,7 @@ function search_info(el) {
         body: `url=tpPortal/geodata/pois/${code}`
     }).then(resp => resp.json()).then(json => {
         out.innerText = '';
-        out.innerText = json.Code + ' ' + Xjson.Description + '\nLinee:\n';
+        out.innerText = json.Code + ' ' + json.Description + '\nLinee:\n';
         for (line of json.Lines) {
             out.innerHTML += '\t' + line.Line.LineCode + '\t' + line.Direction + '\t' + line.Line.LineDescription + '\t' + line.WaitMessage + '\n';
             console.log(line);
